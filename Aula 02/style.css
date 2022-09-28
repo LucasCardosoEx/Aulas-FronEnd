@@ -1,0 +1,47 @@
+      #div1 {
+          background-color: red;
+          width: 100px;
+          height: 200px
+      }
+
+      #div2 {
+          background-color: green;
+          width: 100px;
+          height: 200px;
+      }
+
+      #div3 {
+          background-color: blue;
+          width: 100px;
+          height: 200px;
+      }
+
+      button {
+          min-height: 50;
+          min-width: 50;
+          margin: 50;
+          border: radius 20px red;
+      }
+
+      * {}
+
+      h1 {
+          color: #000000 !important;
+      }
+
+      .oi {
+          color: blue;
+      }
+
+      #ola {
+          color: pink;
+      }
+      
+      a>li {
+          font-size: 20px;
+          color: #ff0000;
+      }
+
+      a+a {
+          margin-left: 20px;
+      }

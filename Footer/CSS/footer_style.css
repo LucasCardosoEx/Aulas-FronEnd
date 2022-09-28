@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    height: 35vh;
+    width: 100vw;
+    background-color: #151515;
+}
+
+/* display para ficar centralizado */
+.footer_all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+
+/* display flex para por um ao lado do outro*/
+.footer_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* tirar os markers de todas as listas */
+ul>li {
+    list-style: none;
+}
+
+
+/* ajustes da logo*/
+.footer_logo {
+    height: 140px;
+    width: 130px;
+}
+
+/*espacamento entre os topicos */
+.footer_links {
+    height: 36px;
+}
+
+/* ajuste de texto dos topicos */
+.footer_links>a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* quando o mouse passar em cima dos topicos */
+.footer_links>a:hover {
+    opacity: 0.7;
+}
+
+/* configurar espaçamento dos titulos e cores*/
+.title_promo {
+    color: #fff;
+    width: 170px;
+}
+
+/* configuração dos paragrafos abaixo do promo */
+.p_promo {
+    color: #767676;
+}
+
+.promo_nav1>a,
+.promo_nav2>a {
+    text-decoration: none;
+}
+
+.promo_nav1>a:hover,
+.promo_nav2>a:hover {
+    opacity: 0.7;
+}
+
+/* follow marvel */
+.footer_follow {
+    color: #fff;
+    height: 40px;
+}
+
+/*icones das redes sociais em grid*/
+.footer_follow>ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.img_follow {
+    width: 20px;
+    height: 20px;
+}
+
+
+.footer_legal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    gap: 20px;
+}
+
+.footer_legal>a {
+    color: #767676;
+    text-decoration: none;
+}
+
+.footer_legal>span {
+    color: #767676;
+    text-decoration: none;
+}
+
+.footer_legal:hover>a:hover {
+    color: #fff;
+}
+
+/*breakpoints*/
+
+@media (max-width: 1243px) {
+
+    .footer_legal {
+        font-size: 0.9em;
+        gap: 15px;
+    }
+
+    .img_insider,
+    .img_u {
+        height: 0px;
+    }
+}
+
+@media (max-width: 970px) {
+    .footer_all {
+        width: 750px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    /*background*/
+    footer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer_logo {
+        height: 100px;
+        width: 90px;
+    }
+
+    /* alterar display  */
+    .footer_main {
+        display: flex;
+        flex-direction: column;
+        ;
+    }
+
+    /* centralizar navigation2 */
+    .nav2 {
+        width: 56%;
+    }
+
+    .img_insider,
+    .img_u {
+        height: 100%;
+    }
+
+    .promo_nav1,
+    .promo_nav2 {
+        height: 65px;
+    }
+
+    .footer_follow {
+        height: 110px;
+        width: 200px;
+        padding-right: 40px;
+        margin-top: 30px;
+    }
+
+    .img_follow {
+        margin-top: 10px;
+    }
+
+    @media (max-width: 590px) {
+        .footer_all {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .nav2{
+            margin-left: 70px;
+        }
+
+        .promo_nav1,
+        .promo_nav2 {
+            margin-left: 115px;
+        }
+
+        .footer_follow{
+            margin-left: 115px;
+        }
+
+        .footer_legal{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+}
